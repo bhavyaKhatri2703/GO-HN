@@ -79,8 +79,7 @@ func toDeleteIds(old []int64, new []int64) []int64 {
 	return delete
 }
 
-func main() {
-
+func connectToRabbitmq() *amqp.Channel {
 	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
 	if err != nil {
 		fmt.Println(err)
@@ -95,10 +94,12 @@ func main() {
 		ch.QueueDeclare(q, true, false, false, false, nil)
 	}
 
+	return ch
+}
+
+func periodicFetcher(oldTopIds []int64, oldNewIds []int64, ch *amqp.Channel) {
 	newStoriesUrl := "https://hacker-news.firebaseio.com/v0/topstories.json"
 	topStoriesUrl := "https://hacker-news.firebaseio.com/v0/newstories.json"
-
-	var oldTopIds, oldNewIds []int64
 
 	ticker := time.NewTicker(1 * time.Minute)
 	for range ticker.C {
@@ -119,4 +120,11 @@ func main() {
 		oldNewIds = newIds
 		oldTopIds = topIds
 	}
+
+}
+func main() {
+	connectToRabbitmq()
+	var oldTopIds, oldNewIds []int64
+	ch := connectToRabbitmq()
+	periodicFetcher(oldTopIds, oldNewIds, ch)
 }
