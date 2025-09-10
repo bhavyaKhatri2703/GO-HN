@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service EmbeddingsService {
+    rpc GetEmbeddings(InterestsRequest) returns (InterestsResponse);
+}
+
+message InterestsRequest {
+    repeated string interests = 1;
+}
+
+message InterestsResponse {
+    repeated float embeddings = 1;
+}
