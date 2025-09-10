@@ -1,32 +1,50 @@
 package auth
 
 import (
+	"backend/application/grpc_"
 	"database/sql"
 	"encoding/json"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"google.golang.org/grpc"
 )
 
 type Interests struct {
-	Names      []string `json:"names"`
-	Embeddings []int64  `json:"embeddings"`
+	Names []string `json:"names"`
 }
 
-func InterestsHandler(c *gin.Context, db *sql.DB) {
+type InterestsCookie struct {
+	Names      []string  `json:"names"`
+	Embeddings []float32 `json:"embeddings"`
+}
+
+func InterestsHandler(c *gin.Context, db *sql.DB, conn *grpc.ClientConn) {
 	var interests Interests
 
-	err := c.ShouldBindJSON(&interests)
-
-	if err != nil {
+	if err := c.ShouldBindJSON(&interests); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid interests"})
 		return
 	}
-	interestsData, err := json.Marshal(interests)
+
+	embeddings, err := grpc_.ReqEmbeddings(conn, interests.Names)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not encode interests"})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get embeddings"})
 		return
 	}
-	c.SetCookie("user_interests", string(interestsData), 1800, "/", "", false, true)
-	c.JSON(http.StatusOK, gin.H{"message": "Interests saved successfully"})
+
+	cookieData := InterestsCookie{
+		Names:      interests.Names,
+		Embeddings: embeddings,
+	}
+
+	data, err := json.Marshal(cookieData)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not encode data"})
+		return
+	}
+
+	c.SetCookie("user_interests", string(data), 1800, "/", "", false, true)
+
+	c.JSON(http.StatusOK, gin.H{"message": "Interests and embeddings saved successfully"})
 }

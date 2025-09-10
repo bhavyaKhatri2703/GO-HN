@@ -1,4 +1,4 @@
-package grpc
+package grpc_
 
 import (
 	pb "backend/proto"
@@ -19,10 +19,10 @@ func Start_grpc() *grpc.ClientConn {
 	return conn
 }
 
-func ReqEmbeddings(conn *grpc.ClientConn) *pb.InterestsResponse {
+func ReqEmbeddings(conn *grpc.ClientConn, interests []string) ([]float32, error) {
 	client := pb.NewEmbeddingsServiceClient(conn)
 	req := &pb.InterestsRequest{
-		Interests: []string{"python", "Go", "Ai"}, // will come from cookies
+		Interests: interests,
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
@@ -31,5 +31,5 @@ func ReqEmbeddings(conn *grpc.ClientConn) *pb.InterestsResponse {
 	if err != nil {
 		log.Fatalf("Error calling service: %v", err)
 	}
-	return res
+	return res.Embeddings, err
 }
