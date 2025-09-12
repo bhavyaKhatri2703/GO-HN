@@ -22,3 +22,5 @@ def search(query,conn):
     results = cursor.fetchall()
 
     print(results)
+
+print(generateEmbeddings("GoLang Javascript Cyber Security"))
