@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Oldnewspapertypes-449D.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+}
