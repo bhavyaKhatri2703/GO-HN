@@ -1,8 +1,7 @@
-package News
+package api
 
 import (
 	search "backend/Search"
-	"database/sql"
 	"encoding/json"
 	"net/http"
 	"strings"
@@ -10,12 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type InterestsCookie struct {
-	Names      []string  `json:"names"`
-	Embeddings []float32 `json:"embeddings"`
-}
-
-func GetNews(ctx *gin.Context, db *sql.DB) {
+func (s *Server) GetNews(ctx *gin.Context) {
 	cookie, err := ctx.Cookie("user_interests")
 	if err != nil {
 		ctx.JSON(http.StatusUnauthorized, gin.H{"error": "No user interests found"})
@@ -32,7 +26,7 @@ func GetNews(ctx *gin.Context, db *sql.DB) {
 	bm25Query := strings.Join(cookieData.Names, " ")
 	embQuery := cookieData.Embeddings
 
-	stories, err := search.HybridSearch(bm25Query, embQuery, db)
+	stories, err := search.HybridSearch(bm25Query, embQuery, s.DB)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving news"})
 		return

@@ -1,13 +1,11 @@
-package auth
+package api
 
 import (
 	"backend/application/grpc_"
-	"database/sql"
 	"encoding/json"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"google.golang.org/grpc"
 )
 
 type Interests struct {
@@ -19,7 +17,7 @@ type InterestsCookie struct {
 	Embeddings []float32 `json:"embeddings"`
 }
 
-func InterestsHandler(c *gin.Context, db *sql.DB, conn *grpc.ClientConn) {
+func (s *Server) InterestsHandler(c *gin.Context) {
 	var interests Interests
 
 	if err := c.ShouldBindJSON(&interests); err != nil {
@@ -27,7 +25,7 @@ func InterestsHandler(c *gin.Context, db *sql.DB, conn *grpc.ClientConn) {
 		return
 	}
 
-	embeddings, err := grpc_.ReqEmbeddings(conn, interests.Names)
+	embeddings, err := grpc_.ReqEmbeddings(s.GrpcConn, interests.Names)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get embeddings"})
 		return
