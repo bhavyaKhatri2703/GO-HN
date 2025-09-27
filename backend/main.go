@@ -27,13 +27,30 @@ func main() {
 	var oldTopIds []int64
 	var oldNewIds []int64
 	ch := fetcher.ConnectToRabbitmq()
-	go fetcher.PeriodicFetcher(oldTopIds, oldNewIds, ch)
 
 	db, err := ConnectSQL()
 	if err != nil {
 		fmt.Println("❌ Error connecting to the database:", err)
 		return
 	}
+
+	rows, err := db.Query(`SELECT id from topStories`)
+
+	for rows.Next() {
+		var id int64
+		rows.Scan(&id)
+		oldTopIds = append(oldTopIds, id)
+	}
+
+	rows, err = db.Query(`SELECT id from newStories`)
+
+	for rows.Next() {
+		var id int64
+		rows.Scan(&id)
+		oldNewIds = append(oldNewIds, id)
+	}
+
+	go fetcher.PeriodicFetcher(oldTopIds, oldNewIds, ch)
 
 	grpcConn := g.Start_grpc()
 
