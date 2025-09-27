@@ -2,7 +2,7 @@ import requests
 import pika
 import json
 import threading
-from queries import connect_db,createTables,saveTopStory,saveNewStory,deleteTopStory,deleteNewStory
+from queries import connect_db,createTables,saveStory,deleteStory
 from embeddings import generateEmbeddings
 
 
@@ -41,11 +41,11 @@ def add_callback(conn , queue_name):
             if story_type == 'new':
                 for id in ids :
                     story_data = getStories(id)
-                    saveNewStory(conn,story_data)
+                    saveStory(conn,story_data,"newStories")
             else:
                 for id in ids :
                     story_data = getStories(id)
-                    saveTopStory(conn,story_data)
+                    saveStory(conn,story_data,"topStories")
 
 
         except json.JSONDecodeError as e:
@@ -62,12 +62,12 @@ def delete_callback(conn,queue_name):
 
              if story_type == 'new':
                  for id in ids :
-                     deleteNewStory(conn,id)
+                     deleteStory(conn,id,"newStories")
 
              else:
                  for id in ids :
                      story_data = getStories(id)
-                     deleteTopStory(conn,story_data)
+                     deleteStory(conn,story_data,"topStories")
 
         except json.JSONDecodeError as e:
             print(f"[{queue_name}] Failed to decode message: {e}")
