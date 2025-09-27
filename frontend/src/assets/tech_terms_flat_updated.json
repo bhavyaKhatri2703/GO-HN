@@ -1,0 +1,1724 @@
+[
+  {
+    "name": "Python"
+  },
+  {
+    "name": "Java"
+  },
+  {
+    "name": "C"
+  },
+  {
+    "name": "C++"
+  },
+  {
+    "name": "C#"
+  },
+  {
+    "name": "GoLang"
+  },
+  {
+    "name": "Rust"
+  },
+  {
+    "name": "Kotlin"
+  },
+  {
+    "name": "Swift"
+  },
+  {
+    "name": "JavaScript"
+  },
+  {
+    "name": "TypeScript"
+  },
+  {
+    "name": "PHP"
+  },
+  {
+    "name": "Ruby"
+  },
+  {
+    "name": "Perl"
+  },
+  {
+    "name": "Scala"
+  },
+  {
+    "name": "Haskell"
+  },
+  {
+    "name": "Elixir"
+  },
+  {
+    "name": "Erlang"
+  },
+  {
+    "name": "R"
+  },
+  {
+    "name": "MATLAB"
+  },
+  {
+    "name": "Julia"
+  },
+  {
+    "name": "Lua"
+  },
+  {
+    "name": "Dart"
+  },
+  {
+    "name": "Shell"
+  },
+  {
+    "name": "Bash"
+  },
+  {
+    "name": "PowerShell"
+  },
+  {
+    "name": "Fortran"
+  },
+  {
+    "name": "COBOL"
+  },
+  {
+    "name": "Objective-C"
+  },
+  {
+    "name": "F#"
+  },
+  {
+    "name": "OCaml"
+  },
+  {
+    "name": "Lisp"
+  },
+  {
+    "name": "Scheme"
+  },
+  {
+    "name": "Solidity"
+  },
+  {
+    "name": "VHDL"
+  },
+  {
+    "name": "Verilog"
+  },
+  {
+    "name": "Zig"
+  },
+  {
+    "name": "Crystal"
+  },
+  {
+    "name": "Nim"
+  },
+  {
+    "name": "APL"
+  },
+  {
+    "name": "Prolog"
+  },
+  {
+    "name": "Smalltalk"
+  },
+  {
+    "name": "Hack"
+  },
+  {
+    "name": "Ada"
+  },
+  {
+    "name": "Assembly"
+  },
+  {
+    "name": "Clojure"
+  },
+  {
+    "name": "Groovy"
+  },
+  {
+    "name": "ColdFusion"
+  },
+  {
+    "name": "Q#"
+  },
+  {
+    "name": "IDL"
+  },
+  {
+    "name": "Tcl"
+  },
+  {
+    "name": "React"
+  },
+  {
+    "name": "Angular"
+  },
+  {
+    "name": "Vue"
+  },
+  {
+    "name": "Svelte"
+  },
+  {
+    "name": "Next.js"
+  },
+  {
+    "name": "Nuxt.js"
+  },
+  {
+    "name": "Remix"
+  },
+  {
+    "name": "Astro"
+  },
+  {
+    "name": "Django"
+  },
+  {
+    "name": "Flask"
+  },
+  {
+    "name": "FastAPI"
+  },
+  {
+    "name": "Spring"
+  },
+  {
+    "name": "Express"
+  },
+  {
+    "name": "NestJS"
+  },
+  {
+    "name": "Koa"
+  },
+  {
+    "name": "Rails"
+  },
+  {
+    "name": "Laravel"
+  },
+  {
+    "name": "Symfony"
+  },
+  {
+    "name": "CodeIgniter"
+  },
+  {
+    "name": ".NET"
+  },
+  {
+    "name": "ASP.NET"
+  },
+  {
+    "name": "Play Framework"
+  },
+  {
+    "name": "Phoenix"
+  },
+  {
+    "name": "Meteor"
+  },
+  {
+    "name": "Backbone.js"
+  },
+  {
+    "name": "jQuery"
+  },
+  {
+    "name": "Bootstrap"
+  },
+  {
+    "name": "Tailwind"
+  },
+  {
+    "name": "Material-UI"
+  },
+  {
+    "name": "Ant Design"
+  },
+  {
+    "name": "Redux"
+  },
+  {
+    "name": "MobX"
+  },
+  {
+    "name": "RxJS"
+  },
+  {
+    "name": "TensorFlow"
+  },
+  {
+    "name": "PyTorch"
+  },
+  {
+    "name": "Keras"
+  },
+  {
+    "name": "Scikit-learn"
+  },
+  {
+    "name": "XGBoost"
+  },
+  {
+    "name": "LightGBM"
+  },
+  {
+    "name": "CatBoost"
+  },
+  {
+    "name": "Pandas"
+  },
+  {
+    "name": "NumPy"
+  },
+  {
+    "name": "SciPy"
+  },
+  {
+    "name": "OpenCV"
+  },
+  {
+    "name": "NLTK"
+  },
+  {
+    "name": "Hugging Face"
+  },
+  {
+    "name": "Transformers"
+  },
+  {
+    "name": "spaCy"
+  },
+  {
+    "name": "LangChain"
+  },
+  {
+    "name": "Milvus"
+  },
+  {
+    "name": "Faiss"
+  },
+  {
+    "name": "Pinecone"
+  },
+  {
+    "name": "Seaborn"
+  },
+  {
+    "name": "Matplotlib"
+  },
+  {
+    "name": "Plotly"
+  },
+  {
+    "name": "D3.js"
+  },
+  {
+    "name": "Chart.js"
+  },
+  {
+    "name": "ECharts"
+  },
+  {
+    "name": "THREE.js"
+  },
+  {
+    "name": "Babylon.js"
+  },
+  {
+    "name": "Socket.IO"
+  },
+  {
+    "name": "gRPC"
+  },
+  {
+    "name": "protobuf"
+  },
+  {
+    "name": "Avro"
+  },
+  {
+    "name": "Kafka Streams"
+  },
+  {
+    "name": "Flink"
+  },
+  {
+    "name": "Spark"
+  },
+  {
+    "name": "Hadoop"
+  },
+  {
+    "name": "Hive"
+  },
+  {
+    "name": "Pig"
+  },
+  {
+    "name": "Storm"
+  },
+  {
+    "name": "Airflow"
+  },
+  {
+    "name": "Luigi"
+  },
+  {
+    "name": "Dagster"
+  },
+  {
+    "name": "MySQL"
+  },
+  {
+    "name": "PostgreSQL"
+  },
+  {
+    "name": "SQLite"
+  },
+  {
+    "name": "Oracle"
+  },
+  {
+    "name": "MongoDB"
+  },
+  {
+    "name": "Redis"
+  },
+  {
+    "name": "Cassandra"
+  },
+  {
+    "name": "CouchDB"
+  },
+  {
+    "name": "DynamoDB"
+  },
+  {
+    "name": "Firebase"
+  },
+  {
+    "name": "Firestore"
+  },
+  {
+    "name": "Neo4j"
+  },
+  {
+    "name": "ArangoDB"
+  },
+  {
+    "name": "TimescaleDB"
+  },
+  {
+    "name": "InfluxDB"
+  },
+  {
+    "name": "ClickHouse"
+  },
+  {
+    "name": "DuckDB"
+  },
+  {
+    "name": "Snowflake"
+  },
+  {
+    "name": "BigQuery"
+  },
+  {
+    "name": "RocksDB"
+  },
+  {
+    "name": "FoundationDB"
+  },
+  {
+    "name": "Dgraph"
+  },
+  {
+    "name": "MS SQL Server"
+  },
+  {
+    "name": "MariaDB"
+  },
+  {
+    "name": "TiDB"
+  },
+  {
+    "name": "CockroachDB"
+  },
+  {
+    "name": "VoltDB"
+  },
+  {
+    "name": "Memcached"
+  },
+  {
+    "name": "LevelDB"
+  },
+  {
+    "name": "Realm"
+  },
+  {
+    "name": "HarperDB"
+  },
+  {
+    "name": "OrientDB"
+  },
+  {
+    "name": "JanusGraph"
+  },
+  {
+    "name": "TinkerPop"
+  },
+  {
+    "name": "PrestoDB"
+  },
+  {
+    "name": "Trino"
+  },
+  {
+    "name": "AWS"
+  },
+  {
+    "name": "GCP"
+  },
+  {
+    "name": "Azure"
+  },
+  {
+    "name": "DigitalOcean"
+  },
+  {
+    "name": "Heroku"
+  },
+  {
+    "name": "Netlify"
+  },
+  {
+    "name": "Vercel"
+  },
+  {
+    "name": "Cloudflare"
+  },
+  {
+    "name": "Kubernetes"
+  },
+  {
+    "name": "Docker"
+  },
+  {
+    "name": "Podman"
+  },
+  {
+    "name": "OpenShift"
+  },
+  {
+    "name": "Terraform"
+  },
+  {
+    "name": "Pulumi"
+  },
+  {
+    "name": "Ansible"
+  },
+  {
+    "name": "Chef"
+  },
+  {
+    "name": "Puppet"
+  },
+  {
+    "name": "Jenkins"
+  },
+  {
+    "name": "GitHub Actions"
+  },
+  {
+    "name": "GitLab CI"
+  },
+  {
+    "name": "CircleCI"
+  },
+  {
+    "name": "TravisCI"
+  },
+  {
+    "name": "ArgoCD"
+  },
+  {
+    "name": "Istio"
+  },
+  {
+    "name": "Envoy"
+  },
+  {
+    "name": "Consul"
+  },
+  {
+    "name": "Vault"
+  },
+  {
+    "name": "Prometheus"
+  },
+  {
+    "name": "Grafana"
+  },
+  {
+    "name": "Loki"
+  },
+  {
+    "name": "ELK"
+  },
+  {
+    "name": "Datadog"
+  },
+  {
+    "name": "Splunk"
+  },
+  {
+    "name": "New Relic"
+  },
+  {
+    "name": "PagerDuty"
+  },
+  {
+    "name": "OpsGenie"
+  },
+  {
+    "name": "Honeycomb"
+  },
+  {
+    "name": "Sentry"
+  },
+  {
+    "name": "Jaeger"
+  },
+  {
+    "name": "Zipkin"
+  },
+  {
+    "name": "Fluentd"
+  },
+  {
+    "name": "Vector"
+  },
+  {
+    "name": "Telegraf"
+  },
+  {
+    "name": "Kibana"
+  },
+  {
+    "name": "Graylog"
+  },
+  {
+    "name": "Dynatrace"
+  },
+  {
+    "name": "OpenTelemetry"
+  },
+  {
+    "name": "Chaos Mesh"
+  },
+  {
+    "name": "Gremlin"
+  },
+  {
+    "name": "Linux"
+  },
+  {
+    "name": "Ubuntu"
+  },
+  {
+    "name": "Debian"
+  },
+  {
+    "name": "Fedora"
+  },
+  {
+    "name": "Arch"
+  },
+  {
+    "name": "CentOS"
+  },
+  {
+    "name": "Red Hat"
+  },
+  {
+    "name": "OpenSUSE"
+  },
+  {
+    "name": "Alpine Linux"
+  },
+  {
+    "name": "FreeBSD"
+  },
+  {
+    "name": "OpenBSD"
+  },
+  {
+    "name": "NetBSD"
+  },
+  {
+    "name": "Windows"
+  },
+  {
+    "name": "macOS"
+  },
+  {
+    "name": "iOS"
+  },
+  {
+    "name": "Android"
+  },
+  {
+    "name": "ChromeOS"
+  },
+  {
+    "name": "QNX"
+  },
+  {
+    "name": "Haiku"
+  },
+  {
+    "name": "Plan 9"
+  },
+  {
+    "name": "Minix"
+  },
+  {
+    "name": "RTOS"
+  },
+  {
+    "name": "Solaris"
+  },
+  {
+    "name": "Illumos"
+  },
+  {
+    "name": "DragonFlyBSD"
+  },
+  {
+    "name": "AIX"
+  },
+  {
+    "name": "HP-UX"
+  },
+  {
+    "name": "MS-DOS"
+  },
+  {
+    "name": "BeOS"
+  },
+  {
+    "name": "Tizen"
+  },
+  {
+    "name": "KaiOS"
+  },
+  {
+    "name": "Symbian"
+  },
+  {
+    "name": "SailfishOS"
+  },
+  {
+    "name": "Algorithms"
+  },
+  {
+    "name": "Data structures"
+  },
+  {
+    "name": "Graph theory"
+  },
+  {
+    "name": "Cryptography"
+  },
+  {
+    "name": "Blockchain"
+  },
+  {
+    "name": "Consensus"
+  },
+  {
+    "name": "Hashing"
+  },
+  {
+    "name": "Merkle Tree"
+  },
+  {
+    "name": "Bloom Filter"
+  },
+  {
+    "name": "Neural networks"
+  },
+  {
+    "name": "Deep learning"
+  },
+  {
+    "name": "Reinforcement learning"
+  },
+  {
+    "name": "NLP"
+  },
+  {
+    "name": "Computer vision"
+  },
+  {
+    "name": "Compiler"
+  },
+  {
+    "name": "Interpreter"
+  },
+  {
+    "name": "Virtual machine"
+  },
+  {
+    "name": "Microservices"
+  },
+  {
+    "name": "Monolith"
+  },
+  {
+    "name": "Event-driven architecture"
+  },
+  {
+    "name": "Serverless"
+  },
+  {
+    "name": "Edge computing"
+  },
+  {
+    "name": "Distributed systems"
+  },
+  {
+    "name": "Fault tolerance"
+  },
+  {
+    "name": "Paxos"
+  },
+  {
+    "name": "Raft"
+  },
+  {
+    "name": "CAP theorem"
+  },
+  {
+    "name": "Sharding"
+  },
+  {
+    "name": "Load balancing"
+  },
+  {
+    "name": "Scalability"
+  },
+  {
+    "name": "Latency"
+  },
+  {
+    "name": "Throughput"
+  },
+  {
+    "name": "Concurrency"
+  },
+  {
+    "name": "Parallelism"
+  },
+  {
+    "name": "Asynchronous"
+  },
+  {
+    "name": "Multithreading"
+  },
+  {
+    "name": "Deadlock"
+  },
+  {
+    "name": "Race condition"
+  },
+  {
+    "name": "Memory management"
+  },
+  {
+    "name": "Garbage collection"
+  },
+  {
+    "name": "Type systems"
+  },
+  {
+    "name": "Functional programming"
+  },
+  {
+    "name": "OOP"
+  },
+  {
+    "name": "Logic programming"
+  },
+  {
+    "name": "Declarative programming"
+  },
+  {
+    "name": "Data mining"
+  },
+  {
+    "name": "Information retrieval"
+  },
+  {
+    "name": "Search engines"
+  },
+  {
+    "name": "Ranking algorithms"
+  },
+  {
+    "name": "Sorting"
+  },
+  {
+    "name": "Pathfinding"
+  },
+  {
+    "name": "Machine translation"
+  },
+  {
+    "name": "Speech recognition"
+  },
+  {
+    "name": "Computer graphics"
+  },
+  {
+    "name": "Rendering"
+  },
+  {
+    "name": "Ray tracing"
+  },
+  {
+    "name": "Simulation"
+  },
+  {
+    "name": "Virtualization"
+  },
+  {
+    "name": "Containerization"
+  },
+  {
+    "name": "TCP/IP"
+  },
+  {
+    "name": "UDP"
+  },
+  {
+    "name": "HTTP"
+  },
+  {
+    "name": "HTTPS"
+  },
+  {
+    "name": "QUIC"
+  },
+  {
+    "name": "DNS"
+  },
+  {
+    "name": "BGP"
+  },
+  {
+    "name": "TLS"
+  },
+  {
+    "name": "SSL"
+  },
+  {
+    "name": "VPN"
+  },
+  {
+    "name": "Proxy"
+  },
+  {
+    "name": "CDN"
+  },
+  {
+    "name": "Firewalls"
+  },
+  {
+    "name": "Zero Trust"
+  },
+  {
+    "name": "SSO"
+  },
+  {
+    "name": "OAuth"
+  },
+  {
+    "name": "JWT"
+  },
+  {
+    "name": "SAML"
+  },
+  {
+    "name": "OpenID Connect"
+  },
+  {
+    "name": "WebAuthn"
+  },
+  {
+    "name": "2FA"
+  },
+  {
+    "name": "MFA"
+  },
+  {
+    "name": "SSH"
+  },
+  {
+    "name": "GPG"
+  },
+  {
+    "name": "PGP"
+  },
+  {
+    "name": "E2EE"
+  },
+  {
+    "name": "Homomorphic encryption"
+  },
+  {
+    "name": "Secure enclaves"
+  },
+  {
+    "name": "Side-channel attacks"
+  },
+  {
+    "name": "SQL injection"
+  },
+  {
+    "name": "XSS"
+  },
+  {
+    "name": "CSRF"
+  },
+  {
+    "name": "RCE"
+  },
+  {
+    "name": "SSRF"
+  },
+  {
+    "name": "CVE"
+  },
+  {
+    "name": "CVSS"
+  },
+  {
+    "name": "Exploit"
+  },
+  {
+    "name": "Sandbox"
+  },
+  {
+    "name": "Honeypot"
+  },
+  {
+    "name": "IDS"
+  },
+  {
+    "name": "IPS"
+  },
+  {
+    "name": "Wireshark"
+  },
+  {
+    "name": "Metasploit"
+  },
+  {
+    "name": "Burp Suite"
+  },
+  {
+    "name": "OWASP"
+  },
+  {
+    "name": "Kali Linux"
+  },
+  {
+    "name": "Aircrack-ng"
+  },
+  {
+    "name": "Snort"
+  },
+  {
+    "name": "Nmap"
+  },
+  {
+    "name": "John the Ripper"
+  },
+  {
+    "name": "Hashcat"
+  },
+  {
+    "name": "ClamAV"
+  },
+  {
+    "name": "Suricata"
+  },
+  {
+    "name": "pfSense"
+  },
+  {
+    "name": "WireGuard"
+  },
+  {
+    "name": "OpenVPN"
+  },
+  {
+    "name": "Tor"
+  },
+  {
+    "name": "I2P"
+  },
+  {
+    "name": "AI"
+  },
+  {
+    "name": "Machine learning"
+  },
+  {
+    "name": "Deep learning"
+  },
+  {
+    "name": "Neural networks"
+  },
+  {
+    "name": "Transformers"
+  },
+  {
+    "name": "LLMs"
+  },
+  {
+    "name": "RAG"
+  },
+  {
+    "name": "Vector databases"
+  },
+  {
+    "name": "Embeddings"
+  },
+  {
+    "name": "Diffusion models"
+  },
+  {
+    "name": "GANs"
+  },
+  {
+    "name": "Autoencoders"
+  },
+  {
+    "name": "Reinforcement learning"
+  },
+  {
+    "name": "Bandits"
+  },
+  {
+    "name": "Federated learning"
+  },
+  {
+    "name": "Transfer learning"
+  },
+  {
+    "name": "Few-shot learning"
+  },
+  {
+    "name": "Zero-shot learning"
+  },
+  {
+    "name": "Explainable AI"
+  },
+  {
+    "name": "MLOps"
+  },
+  {
+    "name": "Feature engineering"
+  },
+  {
+    "name": "Hyperparameter tuning"
+  },
+  {
+    "name": "Model compression"
+  },
+  {
+    "name": "Quantization"
+  },
+  {
+    "name": "Pruning"
+  },
+  {
+    "name": "Knowledge distillation"
+  },
+  {
+    "name": "Self-supervised learning"
+  },
+  {
+    "name": "Semi-supervised learning"
+  },
+  {
+    "name": "Active learning"
+  },
+  {
+    "name": "Meta-learning"
+  },
+  {
+    "name": "Bayesian optimization"
+  },
+  {
+    "name": "Graph neural networks"
+  },
+  {
+    "name": "Speech-to-text"
+  },
+  {
+    "name": "Text-to-speech"
+  },
+  {
+    "name": "Vision transformers"
+  },
+  {
+    "name": "Image segmentation"
+  },
+  {
+    "name": "Object detection"
+  },
+  {
+    "name": "Text summarization"
+  },
+  {
+    "name": "x86"
+  },
+  {
+    "name": "ARM"
+  },
+  {
+    "name": "RISC-V"
+  },
+  {
+    "name": "GPU"
+  },
+  {
+    "name": "TPU"
+  },
+  {
+    "name": "FPGA"
+  },
+  {
+    "name": "ASIC"
+  },
+  {
+    "name": "Microcontrollers"
+  },
+  {
+    "name": "Arduino"
+  },
+  {
+    "name": "Raspberry Pi"
+  },
+  {
+    "name": "Jetson"
+  },
+  {
+    "name": "BeagleBone"
+  },
+  {
+    "name": "IoT"
+  },
+  {
+    "name": "Sensors"
+  },
+  {
+    "name": "Edge devices"
+  },
+  {
+    "name": "Embedded systems"
+  },
+  {
+    "name": "BIOS"
+  },
+  {
+    "name": "UEFI"
+  },
+  {
+    "name": "Firmware"
+  },
+  {
+    "name": "Nvidia CUDA"
+  },
+  {
+    "name": "OpenCL"
+  },
+  {
+    "name": "DirectX"
+  },
+  {
+    "name": "Vulkan"
+  },
+  {
+    "name": "OpenGL"
+  },
+  {
+    "name": "Ray tracing cores"
+  },
+  {
+    "name": "Quantum processors"
+  },
+  {
+    "name": "Optical computing"
+  },
+  {
+    "name": "Neuromorphic computing"
+  },
+  {
+    "name": "Wearables"
+  },
+  {
+    "name": "Smartwatches"
+  },
+  {
+    "name": "Smart glasses"
+  },
+  {
+    "name": "Edge TPU"
+  },
+  {
+    "name": "Git"
+  },
+  {
+    "name": "GitHub"
+  },
+  {
+    "name": "GitLab"
+  },
+  {
+    "name": "Bitbucket"
+  },
+  {
+    "name": "Mercurial"
+  },
+  {
+    "name": "SVN"
+  },
+  {
+    "name": "Gerrit"
+  },
+  {
+    "name": "Pull request"
+  },
+  {
+    "name": "Forking"
+  },
+  {
+    "name": "Branching"
+  },
+  {
+    "name": "CI/CD"
+  },
+  {
+    "name": "Phabricator"
+  },
+  {
+    "name": "SourceForge"
+  },
+  {
+    "name": "Monorepo"
+  },
+  {
+    "name": "Polyrepo"
+  },
+  {
+    "name": "Metaverse"
+  },
+  {
+    "name": "Web3"
+  },
+  {
+    "name": "Smart contracts"
+  },
+  {
+    "name": "DeFi"
+  },
+  {
+    "name": "NFTs"
+  },
+  {
+    "name": "DAO"
+  },
+  {
+    "name": "Quantum computing"
+  },
+  {
+    "name": "VR"
+  },
+  {
+    "name": "AR"
+  },
+  {
+    "name": "MR"
+  },
+  {
+    "name": "Holography"
+  },
+  {
+    "name": "3D printing"
+  },
+  {
+    "name": "Robotics"
+  },
+  {
+    "name": "Drones"
+  },
+  {
+    "name": "Autonomous vehicles"
+  },
+  {
+    "name": "Self-driving cars"
+  },
+  {
+    "name": "LIDAR"
+  },
+  {
+    "name": "GPS"
+  },
+  {
+    "name": "Satellites"
+  },
+  {
+    "name": "Biotech"
+  },
+  {
+    "name": "Nanotech"
+  },
+  {
+    "name": "Greentech"
+  },
+  {
+    "name": "Climate tech"
+  },
+  {
+    "name": "Digital twins"
+  },
+  {
+    "name": "Edge AI"
+  },
+  {
+    "name": "Synthetic biology"
+  },
+  {
+    "name": "CRISPR"
+  },
+  {
+    "name": "Bioinformatics"
+  },
+  {
+    "name": "AgriTech"
+  },
+  {
+    "name": "FinTech"
+  },
+  {
+    "name": "EdTech"
+  },
+  {
+    "name": "HealthTech"
+  },
+  {
+    "name": "PropTech"
+  },
+  {
+    "name": "InsurTech"
+  },
+  {
+    "name": "Cybersecurity"
+  },
+  {
+    "name": "AI Agents"
+  },
+  {
+    "name": "Autonomous Systems"
+  },
+  {
+    "name": "DevSecOps"
+  },
+  {
+    "name": "Cloud Computing"
+  },
+  {
+    "name": "Big Data"
+  },
+  {
+    "name": "Data Science"
+  },
+  {
+    "name": "Data Engineering"
+  },
+  {
+    "name": "Data Analytics"
+  },
+  {
+    "name": "Business Intelligence"
+  },
+  {
+    "name": "Agile"
+  },
+  {
+    "name": "Scrum"
+  },
+  {
+    "name": "Kanban"
+  },
+  {
+    "name": "Product Management"
+  },
+  {
+    "name": "Tech Startups"
+  },
+  {
+    "name": "Venture Capital"
+  },
+  {
+    "name": "Open Source"
+  },
+  {
+    "name": "Free Software"
+  },
+  {
+    "name": "Digital Transformation"
+  },
+  {
+    "name": "Edge AI"
+  },
+  {
+    "name": "Federated Systems"
+  },
+  {
+    "name": "IoT Security"
+  },
+  {
+    "name": "Smart Cities"
+  },
+  {
+    "name": "Digital Identity"
+  },
+  {
+    "name": "Privacy Engineering"
+  },
+  {
+    "name": "Ethical AI"
+  },
+  {
+    "name": "Responsible AI"
+  },
+  {
+    "name": "Green Computing"
+  },
+  {
+    "name": "Sustainable Tech"
+  },
+  {
+    "name": "Digital Health"
+  },
+  {
+    "name": "Telemedicine"
+  },
+  {
+    "name": "Wearable Tech"
+  },
+  {
+    "name": "AR Cloud"
+  },
+  {
+    "name": "Spatial Computing"
+  },
+  {
+    "name": "Generative AI"
+  },
+  {
+    "name": "Prompt Engineering"
+  },
+  {
+    "name": "Conversational AI"
+  },
+  {
+    "name": "Multi-Agent Systems"
+  },
+  {
+    "name": "Swarm Intelligence"
+  },
+  {
+    "name": "Knowledge Graphs"
+  },
+  {
+    "name": "Semantic Web"
+  },
+  {
+    "name": "Data Governance"
+  },
+  {
+    "name": "Data Privacy"
+  },
+  {
+    "name": "Data Lakes"
+  },
+  {
+    "name": "Data Warehouses"
+  },
+  {
+    "name": "Information Security"
+  },
+  {
+    "name": "Application Security"
+  },
+  {
+    "name": "Network Security"
+  },
+  {
+    "name": "Zero Knowledge Proofs"
+  },
+  {
+    "name": "Quantum Cryptography"
+  },
+  {
+    "name": "Cyber-Physical Systems"
+  },
+  {
+    "name": "Industrial IoT"
+  },
+  {
+    "name": "Smart Manufacturing"
+  },
+  {
+    "name": "Supply Chain Tech"
+  },
+  {
+    "name": "Cloud Native"
+  },
+  {
+    "name": "Platform Engineering"
+  },
+  {
+    "name": "Site Reliability Engineering"
+  },
+  {
+    "name": "Observability"
+  },
+  {
+    "name": "Chaos Engineering"
+  },
+  {
+    "name": "Resilience Engineering"
+  },
+  {
+    "name": "Digital Twins"
+  },
+  {
+    "name": "Synthetic Data"
+  },
+  {
+    "name": "Explainable AI"
+  },
+  {
+    "name": "AI Safety"
+  },
+  {
+    "name": "Alignment Problem"
+  },
+  {
+    "name": "Robotic Process Automation"
+  },
+  {
+    "name": "Low-Code"
+  },
+  {
+    "name": "No-Code"
+  },
+  {
+    "name": "Citizen Development"
+  },
+  {
+    "name": "Serverless Computing"
+  },
+  {
+    "name": "Edge Devices"
+  },
+  {
+    "name": "Self-Healing Systems"
+  },
+  {
+    "name": "Continuous Integration"
+  },
+  {
+    "name": "Continuous Delivery"
+  },
+  {
+    "name": "Continuous Deployment"
+  },
+  {
+    "name": "Blockchain Security"
+  },
+  {
+    "name": "Decentralized Identity"
+  },
+  {
+    "name": "Tokenization"
+  },
+  {
+    "name": "DAO Governance"
+  },
+  {
+    "name": "Smart Infrastructure"
+  },
+  {
+    "name": "EnergyTech"
+  },
+  {
+    "name": "ClimateTech"
+  },
+  {
+    "name": "Bioinformatics"
+  },
+  {
+    "name": "AgriTech"
+  },
+  {
+    "name": "FinTech"
+  },
+  {
+    "name": "InsurTech"
+  },
+  {
+    "name": "MedTech"
+  },
+  {
+    "name": "EdTech"
+  },
+  {
+    "name": "PropTech"
+  },
+  {
+    "name": "RegTech"
+  },
+  {
+    "name": "LegalTech"
+  },
+  {
+    "name": "MarTech"
+  },
+  {
+    "name": "RetailTech"
+  },
+  {
+    "name": "SpaceTech"
+  },
+  {
+    "name": "DefenseTech"
+  }
+]

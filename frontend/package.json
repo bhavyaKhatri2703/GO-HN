@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@tarekraafat/autocomplete.js": "^10.2.9",
+    "js-cookie": "^3.0.5",
+    "js-cookies": "^1.0.4",
     "react": "^19.1.1",
     "react-autosuggest": "^10.1.0",
     "react-dom": "^19.1.1"
