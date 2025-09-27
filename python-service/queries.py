@@ -88,22 +88,26 @@ def saveTopStory(conn,story):
     conn.commit()
     cursor.close()
 
-def deleteNewStory(conn , id):
+def deleteNewStory(conn , story):
     cursor = conn.cursor()
 
     cursor.execute("""
               DELETE FROM newStories WHERE id = %s
-          """, (id,))
+          """, (story['id'],))
+
+    print(f"deleted : {story['id']}")
 
     conn.commit()
     cursor.close()
 
-def deleteTopStory(conn , id):
+def deleteTopStory(conn , story):
     cursor = conn.cursor()
 
     cursor.execute("""
             DELETE FROM topStories WHERE id = %s
-        """, (id,))
+        """, (story['id'],))
+
+    print(f"deleted : {story['id']}")
 
     conn.commit()
     cursor.close()

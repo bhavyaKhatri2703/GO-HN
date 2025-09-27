@@ -12,7 +12,6 @@ class EmbeddingsService(embeddings_pb2_grpc.EmbeddingsServiceServicer):
 
         text = " ".join(interests)
         embeddings = generateEmbeddings(text)
-
         return embeddings_pb2.InterestsResponse(embeddings=embeddings)
 
 def serve():
