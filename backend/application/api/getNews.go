@@ -2,38 +2,36 @@ package api
 
 import (
 	search "backend/Search"
-	"encoding/json"
 	"net/http"
 	"strings"
 
 	"github.com/gin-gonic/gin"
 )
 
+type GetNewsRequest struct {
+	Names      []string  `json:"Names"`
+	Embeddings []float32 `json:"Embeddings"`
+}
+
 func (s *Server) GetNews(ctx *gin.Context) {
-	cookie, err := ctx.Cookie("user_interests")
-	if err != nil {
-		ctx.JSON(http.StatusUnauthorized, gin.H{"error": "No user interests found"})
+	var req GetNewsRequest
+	if err := ctx.ShouldBindJSON(&req); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request"})
 		return
 	}
 
-	var cookieData InterestsCookie
-	err = json.Unmarshal([]byte(cookie), &cookieData)
-	if err != nil {
-		ctx.JSON(http.StatusInternalServerError, gin.H{"error": "Invalid cookie data"})
-		return
-	}
+	bm25Query := strings.Join(req.Names, " ")
+	embQuery := req.Embeddings
 
-	bm25Query := strings.Join(cookieData.Names, " ")
-	embQuery := cookieData.Embeddings
-
-	stories, err := search.HybridSearch(bm25Query, embQuery, s.DB)
+	topStories, newStories, err := search.HybridSearch(bm25Query, embQuery, s.DB)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": "Error retrieving news"})
 		return
 	}
 
 	ctx.JSON(http.StatusOK, gin.H{
-		"message": "News retrieved successfully",
-		"stories": stories,
+		"message":    "News retrieved successfully",
+		"newStories": newStories,
+		"topStories": topStories,
 	})
 }
