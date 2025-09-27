@@ -22,6 +22,7 @@ func HybridSearch(query string, queryEmb []float32, db *sql.DB) ([]Story, []Stor
 	var newStories []Story
 	var topStories []Story
 
+	// Convert []float32 to a properly formatted string for the PostgreSQL vector type
 	embStr := make([]string, len(queryEmb))
 	for i, v := range queryEmb {
 		embStr[i] = fmt.Sprintf("%f", v)
@@ -50,18 +51,17 @@ func HybridSearch(query string, queryEmb []float32, db *sql.DB) ([]Story, []Stor
 		var bm25_rank, distance, combinedScore float32
 		err := rows.Scan(&story.Id, &story.By, &story.Type, &story.Text, &story.Url, &story.Title, &story.Full_text, &story.Score, &bm25_rank, &distance, &combinedScore)
 		if err != nil {
-			log.Println("Scan error:", err)
+			log.Println("Scan error here?:", err)
 			return nil, nil, err
 		}
-		fmt.Println(story)
 		topStories = append(topStories, story)
 	}
 
 	rows, err = db.Query(`
     SELECT id, by, type, text, url, title, full_text, score,
-    bm25_embedding <&> to_bm25query('top_embedding_bm25', tokenize($1, 'tokenizer1')) AS bm25_rank,
+    bm25_embedding <&> to_bm25query('new_embedding_bm25', tokenize($1, 'tokenizer1')) AS bm25_rank,
 			(sem_embedding <=> $2::vector) AS semantic_distance,
-			((0.7 * (bm25_embedding <&> to_bm25query('top_embedding_bm25', tokenize($1, 'tokenizer1')))) +
+			((0.7 * (bm25_embedding <&> to_bm25query('new_embedding_bm25', tokenize($1, 'tokenizer1')))) +
 			 (0.3 * (1.0 - (sem_embedding <=> $2::vector)))) AS combined_score
 		FROM newStories
     	ORDER BY combined_score DESC
@@ -79,7 +79,7 @@ func HybridSearch(query string, queryEmb []float32, db *sql.DB) ([]Story, []Stor
 		var bm25_rank, distance, combinedScore float32
 		err := rows.Scan(&story.Id, &story.By, &story.Type, &story.Text, &story.Url, &story.Title, &story.Full_text, &story.Score, &bm25_rank, &distance, &combinedScore)
 		if err != nil {
-			log.Println("Scan error:", err)
+			log.Println("Scan error here maybe?:", err)
 			return nil, nil, err
 		}
 		fmt.Println(story)
