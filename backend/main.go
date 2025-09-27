@@ -3,6 +3,7 @@ package main
 import (
 	"backend/application/api"
 	g "backend/application/grpc_"
+	"backend/fetcher"
 	"database/sql"
 	"fmt"
 	"log"
@@ -16,10 +17,17 @@ func ConnectSQL() (*sql.DB, error) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	fmt.Println("db connected")
 	return db, err
 }
 
 func main() {
+
+	var oldTopIds []int64
+	var oldNewIds []int64
+	ch := fetcher.ConnectToRabbitmq()
+	go fetcher.PeriodicFetcher(oldTopIds, oldNewIds, ch)
 
 	db, err := ConnectSQL()
 	if err != nil {
