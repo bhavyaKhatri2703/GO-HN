@@ -100,8 +100,8 @@ func ConnectToRabbitmq() *amqp.Channel {
 }
 
 func PeriodicFetcher(oldTopIds []int64, oldNewIds []int64, ch *amqp.Channel) {
-	newStoriesUrl := "https://hacker-news.firebaseio.com/v0/topstories.json"
-	topStoriesUrl := "https://hacker-news.firebaseio.com/v0/newstories.json"
+	newStoriesUrl := "https://hacker-news.firebaseio.com/v0/newstories.json"
+	topStoriesUrl := "https://hacker-news.firebaseio.com/v0/topstories.json"
 
 	ticker := time.NewTicker(1 * time.Minute)
 	for range ticker.C {

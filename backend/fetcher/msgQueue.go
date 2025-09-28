@@ -35,6 +35,6 @@ func PublishArray(ch *amqp.Channel, queue string, ids []int64, storyType string)
 	if err != nil {
 		fmt.Println(" publish error:", err)
 	} else {
-		fmt.Printf("Published %d IDs to %s\n", len(ids), queue)
+		fmt.Printf("Published %d %s IDs to %s\n", len(ids), storyType, queue)
 	}
 }
