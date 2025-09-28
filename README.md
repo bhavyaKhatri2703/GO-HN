@@ -7,8 +7,11 @@ It periodically fetches fresh news from the Hacker News API, automatically repla
 
 # Features
 Hybrid search combining BM25 keyword ranking with semantic embeddings for improved relevance.
+
 Two categories of news:
     Top News – Popular stories ranked by Hacker News.
     New News – Latest stories as they appear.
+    
 Personalized recommendations based on user-defined interests.
+
 Rolling database that keeps only the most recent 1,000 stories.
